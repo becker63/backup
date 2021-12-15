@@ -1,0 +1,6 @@
+Using a loop in the example below will continue reading the file until the EOF is reached, which returns a value of 1 (a
+n integer) after each success. When it fails or reaches t
+he end of the file, it will return EOF or -1. So, the condit
+ion in the while loop below is like saying "while it kee
+ps returning success, keep trying to scan the file, and 
+break out of the loop when it fails."

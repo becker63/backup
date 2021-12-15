@@ -1,0 +1,77 @@
+//find total chars
+	int charsinfile = sizeof(str) / sizeof(str[0]);
+	printf("%i", charsinfile);
+
+    else if(arg2 != NULL)
+	{
+		arg2++;
+		printf("%s", arg2);
+	}
+
+
+
+
+	char *pattern1 = "`";
+	char *pattern2 = "`";
+
+	if (start = strstr(text, pattern1))
+	{
+		start += strlen( pattern1 );
+		if (end = strstr(start, pattern2))
+		{
+			target = (char *)malloc(end - start + 1);
+			memcpy(target, start, end - start);
+			target[end - start] = '\0';
+
+		}
+	}
+	if (target) printf("%s", target);
+	free(target);
+
+
+	
+	int charnum = 0;
+
+	//keep on adding charnum until it equals size of string
+	for (charnum = 0; charnum < strlen(text); charnum++){
+		
+		if (text[charnum] == '`') {
+			printf("found one");
+			
+		}
+	}
+
+
+
+	char *pattern1 = "`";
+	char *pattern2 = "`";
+	char *target = NULL;
+	char *start, *end;
+
+	//wtf is this, research pointers?
+	if (start = strstr(text, pattern1))
+	{
+		start += strlen( pattern1 );
+		if (end = strstr(start, pattern2))
+		{
+			target = (char *)malloc(end - start + 1);
+			memcpy(target, start, end - start);
+			target[end - start] = '\0';
+
+		}
+	}
+	if (target) printf("%s", target);
+	free(target);
+	
+
+
+
+
+	char *check = "`";
+	char *pattern;
+	pattern = strchr(text, '`');
+	while(pattern != NULL)
+	{
+		printf("found at %d \n", pattern-text+1);
+		pattern = strchr(pattern+1, '`');
+	}
